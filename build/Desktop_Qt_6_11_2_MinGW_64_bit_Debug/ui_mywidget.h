@@ -41,6 +41,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
     QPushButton *insetButton_1;
+    QPushButton *importButton_3;
     QPushButton *exportButton_2;
     QSpacerItem *horizontalSpacer_2;
 
@@ -113,6 +114,11 @@ public:
 
         horizontalLayout->addWidget(insetButton_1);
 
+        importButton_3 = new QPushButton(MyWidget);
+        importButton_3->setObjectName("importButton_3");
+
+        horizontalLayout->addWidget(importButton_3);
+
         exportButton_2 = new QPushButton(MyWidget);
         exportButton_2->setObjectName("exportButton_2");
 
@@ -139,6 +145,7 @@ public:
         label_3->setText(QCoreApplication::translate("MyWidget", "\345\247\223\345\220\215:", nullptr));
         label_4->setText(QCoreApplication::translate("MyWidget", "\351\233\273\350\251\261:", nullptr));
         insetButton_1->setText(QCoreApplication::translate("MyWidget", "\346\226\260\345\242\236", nullptr));
+        importButton_3->setText(QCoreApplication::translate("MyWidget", "\345\214\257\345\205\245", nullptr));
         exportButton_2->setText(QCoreApplication::translate("MyWidget", "\345\214\257\345\207\272", nullptr));
     } // retranslateUi
 
