@@ -99,7 +99,9 @@ void MyWidget::on_importButton_3_clicked()
     QStringList lines = readStr.split("\n", Qt::SkipEmptyParts);   // 用換行切成一列一列
     int cols = ui->conetbook->columnCount();
     for (int i = 0; i < lines.size(); i++) {
-        QStringList items = lines[i].split(",");                   // 用逗號切成一格一格
+
+        QStringList items = lines[i].split(",");
+        // 用逗號切成一格一格的
         ui->conetbook->insertRow(i);
         for (int j = 0; j < cols; j++) {
             ui->conetbook->setItem(i, j, new QTableWidgetItem(items.value(j)));  // 欄位不夠就放空字串
