@@ -6,7 +6,6 @@
 #include<QMessageBox>
 #include<QFileDialog>
 
-QString mFilename="C:/Users/user/Desktop/1019";
 
 MyWidget::MyWidget(QWidget *parent)
     : QWidget(parent)
